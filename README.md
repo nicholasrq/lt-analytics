@@ -5,7 +5,7 @@ Split data into Google Analytics.
 
 
 #Installation
-```
+```ruby
 gem 'lt-ayalytics', :git => 'git@github.com:nicholasrq/lt-analytics.git'
 ```
 
@@ -13,14 +13,14 @@ gem 'lt-ayalytics', :git => 'git@github.com:nicholasrq/lt-analytics.git'
 
 In your view include this:
 
-```
+```erb
 <% tracking_code(:account => "UA-123456-78") %>
 ```
 
 #Advanced usage
 As well as `:account` you can specify some other options:
 
-``` 
+```erb
 <% tracking_code({
 	:account => "UA-123456-78",
 	:rails_env => :production,		// helper will render content only in production
