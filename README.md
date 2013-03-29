@@ -14,17 +14,17 @@ gem 'lt-analytics', :git => 'git://github.com/nicholasrq/lt-analytics.git'
 In your view include this:
 
 ```erb
-<% tracking_code(:account => "UA-123456-78") %>
+<%= tracking_code(:account => "UA-123456-78") %>
 ```
 
 #Advanced usage
 As well as `:account` you can specify some other options:
 
 ```erb
-<% tracking_code({
-	:account => "UA-123456-78",
-	:rails_env => :production,		# helper will render content only in production
-	:partial => "index/analytics"	# use the partial instead of raw code from gem
+<%= tracking_code({
+	:account   => "UA-123456-78",
+	:rails_env => :production,        # helper will render content only in production
+	:partial   => "index/analytics"   # use the partial instead of raw code from gem
 }) %>
 ```
 
