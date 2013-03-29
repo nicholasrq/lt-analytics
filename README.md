@@ -6,7 +6,7 @@ Split data into Google Analytics.
 
 #Installation
 ```ruby
-gem 'lt-ayalytics', :git => 'git@github.com:nicholasrq/lt-analytics.git'
+gem 'lt-analytics', :git => 'git://github.com/nicholasrq/lt-analytics.git'
 ```
 
 #Usage
