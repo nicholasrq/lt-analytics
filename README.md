@@ -28,6 +28,8 @@ As well as `:account` you can specify some other options:
 }) %>
 ```
 
+Also `rails_env` can be a string or array of string or array of symbols.
+
 In the partial you'll have some local variables:
 
 * `account` – your account code
