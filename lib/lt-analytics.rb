@@ -5,7 +5,7 @@ module Split
 
 		# main helper
 		def tracking_code(options={}, top = true)
-			account = top ? options.delete(:account) : nil
+			account = top ? options[:account] : nil
 			raise "Account code MUST be specified" if top && account.nil?
 
 			# if it's a environment-specific call
