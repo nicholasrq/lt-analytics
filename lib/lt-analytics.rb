@@ -44,7 +44,7 @@ module Split
 			return nil if session[:split].nil?
 			arr = []
 			session[:split].each_with_index do |h,i|
-				arr << "_gaq.push(['_setCustomVar', #{i+1}, '#{h[0]}', '#{h[1]}', 1]);"
+				arr << "dataLayer.push({ '#{h[0]}' : '#{h[1]}' });"
 			end
 			arr.reverse[0..4].reverse.join("\n")
 		end
