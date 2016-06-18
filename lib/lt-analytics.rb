@@ -15,7 +15,7 @@ module Split
 			unless (partial = options[:partial]).nil?
 
 				render(:partial => partial, :locals => {
-					:account 		=> account,
+					:account 			=> account,
 					:custom_vars 	=> raw(custom_variables)
 				})
 
